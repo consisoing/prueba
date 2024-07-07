@@ -1,53 +1,142 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Currículum</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-    <script defer src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Curriculum Vitae - Luis Siso</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1, h2 {
+        text-align: center;
+        color: #333;
+    }
+
+    .profile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .profile img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .profile .info {
+        flex: 1;
+        margin-left: 20px;
+    }
+
+    .contact {
+        margin-bottom: 20px;
+    }
+
+    .contact p {
+        margin: 5px 0;
+    }
+
+    .skills {
+        margin-bottom: 20px;
+    }
+
+    .skills ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .skills li {
+        margin-bottom: 8px;
+    }
+
+    .education, .experience {
+        margin-bottom: 20px;
+    }
+
+    .education h3, .experience h3 {
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    .education p, .experience p {
+        margin: 5px 0;
+    }
+
+    @media (max-width: 600px) {
+        .profile {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .profile img {
+            margin-bottom: 10px;
+        }
+    }
+</style>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#profile">Perfil</a></li>
-            <li><a href="#experience">Experiencia</a></li>
-            <li><a href="#skills">Habilidades</a></li>
-            <li><a href="#contact">Contacto</a></li>
-        </ul>
-    </nav>
-    <header id="profile">
-        <div class="profile">
-            <img src="{{ url_for('static', filename='img/perfil.jpg') }}" alt="Foto de Perfil">
-            <h1>@tu_usuario</h1>
-            <p>Esta es una breve biografía sobre ti. Habla sobre tus intereses, tu trabajo o cualquier cosa que quieras compartir.</p>
-        </div>
-    </header>
-    <section id="experience">
-        <h2>Experiencia</h2>
-        <div class="experience-item">
-            <h3>Posición 1</h3>
-            <p>Descripción de tu experiencia en la posición 1.</p>
-        </div>
-        <div class="experience-item">
-            <h3>Posición 2</h3>
-            <p>Descripción de tu experiencia en la posición 2.</p>
-        </div>
-        <!-- Agrega más posiciones según necesites -->
-    </section>
-    <section id="skills">
-        <h2>Habilidades</h2>
-        <ul class="skills-list">
-            <li>Habilidad 1</li>
-            <li>Habilidad 2</li>
-            <li>Habilidad 3</li>
-            <!-- Agrega más habilidades según necesites -->
-        </ul>
-    </section>
-    <section id="contact">
-        <h2>Contacto</h2>
-        <p>Correo electrónico: tuemail@ejemplo.com</p>
-        <p>Teléfono: +123 456 7890</p>
-    </section>
+    <div class="container">
+        <header>
+            <h1>Curriculum Vitae</h1>
+            <div class="profile">
+                <img src="https://via.placeholder.com/120" alt="Foto de perfil">
+                <div class="info">
+                    <h2>Luis Siso</h2>
+                    <p>Desarrollador Web</p>
+                </div>
+            </div>
+        </header>
+        
+        <section class="contact">
+            <h2>Contacto</h2>
+            <p><strong>Email:</strong> luis.siso@example.com</p>
+            <p><strong>Teléfono:</strong> +1234567890</p>
+            <p><strong>Dirección:</strong> Ciudad, País</p>
+        </section>
+        
+        <section class="skills">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>React</li>
+            </ul>
+        </section>
+        
+        <section class="education">
+            <h2>Educación</h2>
+            <h3>Grado en Ingeniería Informática</h3>
+            <p>Universidad Ejemplo, Ciudad</p>
+            <p>Fecha de Graduación: Mayo 20XX</p>
+        </section>
+        
+        <section class="experience">
+            <h2>Experiencia Laboral</h2>
+            <h3>Desarrollador Web Junior</h3>
+            <p>Empresa XYZ, Ciudad</p>
+            <p>Fecha de Inicio - Fecha de Fin</p>
+            <p>Descripción breve de las responsabilidades y logros.</p>
+        </section>
+    </div>
 </body>
 </html>
