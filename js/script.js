@@ -14,3 +14,16 @@ document.addEventListener('DOMContentLoaded', function () {
         alert('Redirigiendo a WhatsApp...');
     });
 });
+
+document.getElementById('lang-toggle').addEventListener('click', function() {
+    let currentLang = this.textContent;
+    if (currentLang === 'English') {
+        // Cambiar a inglés
+        document.documentElement.lang = 'en';
+        this.textContent = 'Español';
+    } else {
+        // Cambiar a español
+        document.documentElement.lang = 'es';
+        this.textContent = 'English';
+    }
+});

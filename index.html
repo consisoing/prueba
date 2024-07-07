@@ -1,62 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page - Luis Siso</title>
+    <title>Curriculum Vitae de Luis Siso</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="#home">Inicio</a></li>
-                <li><a href="#about">Sobre Mí</a></li>
-                <li><a href="#skills">Habilidades</a></li>
-                <li><a href="#publications">Publicaciones</a></li>
-                <li><a href="#contact">Contacto</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="publications/publicaciones.html">Publicaciones</a></li>
+                <li><a href="interests/intereses.html">Intereses</a></li>
+                <li><a href="#" id="lang-toggle">English</a></li>
             </ul>
         </nav>
     </header>
-    <section id="home" class="intro">
-        <div class="content">
+    <main>
+        <section class="hero">
+            <img src="images/foto.jpg" alt="Luis Siso">
             <h1>Luis Siso</h1>
             <p>Ingeniero Electricista, Especialista en Gerencia, Fibra Óptica y Energía Solar</p>
-            <a href="#contact" class="btn">Contáctame</a>
-        </div>
-    </section>
-    <section id="about">
-        <div class="content">
-            <h2>Sobre Mí</h2>
-            <p>Descripción sobre tu experiencia y pasiones.</p>
-        </div>
-    </section>
-    <section id="skills">
-        <div class="content">
-            <h2>Habilidades</h2>
-            <ul>
-                <li>Gerencia</li>
-                <li>Fibra Óptica</li>
-                <li>Energía Solar</li>
-            </ul>
-        </div>
-    </section>
-    <section id="publications">
-        <div class="content">
-            <h2>Publicaciones</h2>
-            <p>Contenido sobre las áreas que te apasionan.</p>
-        </div>
-    </section>
-    <section id="contact">
-        <div class="content">
-            <h2>Contacto</h2>
-            <p>Para más información, contáctame en WhatsApp.</p>
-            <a href="https://wa.me/tu-numero" class="btn-whatsapp">WhatsApp</a>
-        </div>
-    </section>
+            <a href="https://wa.me/tu-numero" class="btn-whatsapp">Contáctame en WhatsApp</a>
+        </section>
+        <section class="curriculum">
+            <h2>Curriculum Vitae</h2>
+            <!-- Aquí va el contenido del currículum -->
+        </section>
+    </main>
     <footer>
-        <p>© 2024 Luis Siso | <a href="mailto:ejemplo@example.com">ejemplo@example.com</a></p>
+        <p>&copy; 2024 Luis Siso</p>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
