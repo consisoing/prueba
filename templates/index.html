@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Currículum</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script defer src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#profile">Perfil</a></li>
+            <li><a href="#experience">Experiencia</a></li>
+            <li><a href="#skills">Habilidades</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+    </nav>
+    <header id="profile">
+        <div class="profile">
+            <img src="{{ url_for('static', filename='img/perfil.jpg') }}" alt="Foto de Perfil">
+            <h1>@tu_usuario</h1>
+            <p>Esta es una breve biografía sobre ti. Habla sobre tus intereses, tu trabajo o cualquier cosa que quieras compartir.</p>
+        </div>
+    </header>
+    <section id="experience">
+        <h2>Experiencia</h2>
+        <div class="experience-item">
+            <h3>Posición 1</h3>
+            <p>Descripción de tu experiencia en la posición 1.</p>
+        </div>
+        <div class="experience-item">
+            <h3>Posición 2</h3>
+            <p>Descripción de tu experiencia en la posición 2.</p>
+        </div>
+        <!-- Agrega más posiciones según necesites -->
+    </section>
+    <section id="skills">
+        <h2>Habilidades</h2>
+        <ul class="skills-list">
+            <li>Habilidad 1</li>
+            <li>Habilidad 2</li>
+            <li>Habilidad 3</li>
+            <!-- Agrega más habilidades según necesites -->
+        </ul>
+    </section>
+    <section id="contact">
+        <h2>Contacto</h2>
+        <p>Correo electrónico: tuemail@ejemplo.com</p>
+        <p>Teléfono: +123 456 7890</p>
+    </section>
+</body>
+</html>
