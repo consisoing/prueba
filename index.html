@@ -1,123 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Currículum Vitae</title>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-        background-color: #f0f0f0;
-        margin: 0;
-        padding: 20px;
-    }
-
-    .container {
-        max-width: 800px;
-        margin: auto;
-        background-color: #fff;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-
-    h1 {
-        color: #333;
-        text-align: center;
-    }
-
-    .section {
-        margin-bottom: 20px;
-    }
-
-    .section h2 {
-        color: #555;
-        border-bottom: 1px solid #ccc;
-        padding-bottom: 5px;
-    }
-
-    .section p {
-        color: #666;
-    }
-
-    .contact {
-        margin-bottom: 20px;
-    }
-
-    .contact p {
-        margin: 5px 0;
-    }
-
-    .skills {
-        margin-bottom: 20px;
-    }
-
-    .skills ul {
-        list-style-type: none;
-        padding: 0;
-    }
-
-    .skills li {
-        margin-bottom: 5px;
-    }
-
-    .footer {
-        text-align: center;
-        margin-top: 20px;
-        color: #888;
-    }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page - Luis Siso</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Currículum Vitae</h1>
-        </header>
-
-        <section class="section">
-            <h2>Datos Personales</h2>
-            <div class="contact">
-                <p><strong>Nombre:</strong> Luis Siso</p>
-                <p><strong>Correo Electrónico:</strong> ejemplo@example.com</p>
-                <p><strong>Teléfono:</strong> +1234567890</p>
-                <p><strong>Dirección:</strong> Ciudad, País</p>
-            </div>
-        </section>
-
-        <section class="section">
-            <h2>Experiencia Laboral</h2>
-            <p><strong>Nombre del Empleador</strong> - Cargo (Fecha de inicio - Fecha de fin)</p>
+    <header>
+        <nav>
             <ul>
-                <li>Responsabilidad 1</li>
-                <li>Responsabilidad 2</li>
-                <li>Responsabilidad 3</li>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">Sobre Mí</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#publications">Publicaciones</a></li>
+                <li><a href="#contact">Contacto</a></li>
             </ul>
-        </section>
-
-        <section class="section">
-            <h2>Educación</h2>
-            <p><strong>Título Académico</strong> - Institución Educativa (Fecha de inicio - Fecha de fin)</p>
-            <ul>
-                <li>Logros académicos destacados</li>
-                <li>Relevantes actividades extracurriculares</li>
-            </ul>
-        </section>
-
-        <section class="section">
+        </nav>
+    </header>
+    <section id="home" class="intro">
+        <div class="content">
+            <h1>Luis Siso</h1>
+            <p>Ingeniero Electricista, Especialista en Gerencia, Fibra Óptica y Energía Solar</p>
+            <a href="#contact" class="btn">Contáctame</a>
+        </div>
+    </section>
+    <section id="about">
+        <div class="content">
+            <h2>Sobre Mí</h2>
+            <p>Descripción sobre tu experiencia y pasiones.</p>
+        </div>
+    </section>
+    <section id="skills">
+        <div class="content">
             <h2>Habilidades</h2>
-            <div class="skills">
-                <ul>
-                    <li>Habilidad 1</li>
-                    <li>Habilidad 2</li>
-                    <li>Habilidad 3</li>
-                </ul>
-            </div>
-        </section>
-
-        <footer class="footer">
-            <p>© 2024 Luis Siso | <a href="mailto:ejemplo@example.com">ejemplo@example.com</a></p>
-        </footer>
-    </div>
+            <ul>
+                <li>Gerencia</li>
+                <li>Fibra Óptica</li>
+                <li>Energía Solar</li>
+            </ul>
+        </div>
+    </section>
+    <section id="publications">
+        <div class="content">
+            <h2>Publicaciones</h2>
+            <p>Contenido sobre las áreas que te apasionan.</p>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="content">
+            <h2>Contacto</h2>
+            <p>Para más información, contáctame en WhatsApp.</p>
+            <a href="https://wa.me/tu-numero" class="btn-whatsapp">WhatsApp</a>
+        </div>
+    </section>
+    <footer>
+        <p>© 2024 Luis Siso | <a href="mailto:ejemplo@example.com">ejemplo@example.com</a></p>
+    </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,156 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    scroll-behavior: smooth; /* Scroll suave */
+}
+
+header {
+    background-color: #001f3f; /* Azul Navy */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 80px 20px 40px 20px; /* Añadido espacio para el header */
+    margin: 10px 0;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease-in-out; /* Transición para animación */
+}
+
+section:hover {
+    transform: translateY(-10px); /* Animación al pasar el ratón */
+}
+
+.intro {
+    background-color: #0074D9; /* Azul Celeste */
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.intro .content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.intro h1 {
+    font-size: 3em;
+}
+
+.intro p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.intro .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #001f3f; /* Azul Navy */
+    color: white;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+.intro .btn:hover {
+    background-color: #004080; /* Cambiar color al pasar el ratón */
+}
+
+.content {
+    max-width: 800px;
+    margin: auto;
+}
+
+section h2 {
+    text-align: center;
+    color: #001f3f; /* Azul Navy */
+    margin-bottom: 20px;
+}
+
+.skills ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skills ul li {
+    margin: 10px;
+    background-color: #0074D9; /* Azul Celeste */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.btn-whatsapp {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #25D366;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+    background-color: #128C7E; /* Cambiar color al pasar el ratón */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #001f3f; /* Azul Navy */
+    color: white;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #ffdd57; /* Amarillo para resaltar */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .intro h1 {
+        font-size: 2.5em;
+    }
+
+    .intro p {
+        font-size: 1.1em;
+    }
+}
